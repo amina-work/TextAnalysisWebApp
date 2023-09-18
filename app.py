@@ -161,6 +161,13 @@ if rad=="Sentiment Analysis":
     st.markdown('<div class="custom-text">Understand the underlying sentiment of the text.</div>', unsafe_allow_html=True)
     st.text("")
     st.text("")
+    st.write("""
+        <style>
+            textarea {
+                background-color: #ffffff !important;
+            }
+        </style>
+        """, unsafe_allow_html=True)
     sent2=st.text_area("Enter The Text")
     transformed_sent2=transform_text(sent2)
     vector_sent2=tfidf2.transform([transformed_sent2])
@@ -194,6 +201,13 @@ if rad=="Stress Detection":
     st.markdown('<div class="custom-text">Determine stress levels from the text\'s tone and content.</div>', unsafe_allow_html=True)
     st.text("")
     st.text("")
+    st.write("""
+        <style>
+            textarea {
+                background-color: #ffffff !important;
+            }
+        </style>
+        """, unsafe_allow_html=True)
     sent3=st.text_area("Enter The Text")
     transformed_sent3=transform_text(sent3)
     vector_sent3=tfidf3.transform([transformed_sent3])
@@ -227,6 +241,13 @@ if rad=="Hate and Offensive Content Detection":
     st.markdown('<div class="custom-text">Identify any hateful or offensive content.</div>', unsafe_allow_html=True)
     st.text("")
     st.text("")
+    st.write("""
+        <style>
+            textarea {
+                background-color: #ffffff !important;
+            }
+        </style>
+        """, unsafe_allow_html=True)
     sent4=st.text_area("Enter The Text")
     transformed_sent4=transform_text(sent4)
     vector_sent4=tfidf4.transform([transformed_sent4])
@@ -261,6 +282,13 @@ if rad=="Sarcasm Detection":
     st.markdown('<div class="custom-text">A unique feature that helps detect sarcasm in the text.\n\n\n</div>', unsafe_allow_html=True)
     st.text("")
     st.text("")
+    st.write("""
+        <style>
+            textarea {
+                background-color: #ffffff !important;
+            }
+        </style>
+        """, unsafe_allow_html=True)
     sent5=st.text_area("Enter The Text")
     transformed_sent5=transform_text(sent5)
     vector_sent5=tfidf5.transform([transformed_sent5])
