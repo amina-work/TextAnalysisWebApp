@@ -55,7 +55,7 @@ if rad=="Home":
     st.text("")
     st.text("")
     st.text("")
-    st.subheader("The Links For the Text Analysis Options")
+    #st.subheader("The Links For the Text Analysis Options")
 
 #function to clean and transform the user input which is in raw format
 def transform_text(text):
